@@ -1,15 +1,34 @@
 {
-  "name": "next-js-playground",
+  "name": "stripify",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "riteway -r @babel/register 'src/**/*.test.js' | tap-nirvana"
   },
   "dependencies": {
-    "next": "10.2.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@chakra-ui/react": "^2.1.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@stripe/stripe-js": "^1.30.0",
+    "framer-motion": "^6.3.10",
+    "ky": "^0.30.0",
+    "ky-universal": "^0.10.1",
+    "mongodb": "^4.1.0",
+    "next": "^12.1.6",
+    "next-auth": "^4.3.4",
+    "next-connect": "^0.10.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-icons": "^4.4.0",
+    "react-query": "^3.39.1",
+    "spotify-web-api-node": "^5.0.2",
+    "stripe": "^9.5.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.13.13",
+    "riteway": "^6.2.1"
   }
 }
